@@ -20,6 +20,7 @@ jobs:
       - run: poetry build -vvv
       - run: poetry install --extras flask --extras fastapi --extras db --extras redis
       - run: make coverage
+      - run: ls -la
       - uses: actions/upload-artifact@v2
         with:
           name: htmlcov.zip
