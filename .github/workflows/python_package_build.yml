@@ -25,12 +25,9 @@ jobs:
         with:
           name: htmlcov.zip
           path: htmlcov/
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1
+      - uses: codecov/codecov-action@v1
         with:
           file: ./cov.xml
-          flags: unittests
-          name: pycuator-umbrella(test)
 
       # Install the extra psutil module and run linting+tests in the "psutil enabled" env
       - run: poetry install --extras psutil
