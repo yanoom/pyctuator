@@ -21,4 +21,4 @@ jobs:
       # Add repository
       - run: poetry config repositories.test_pypi https://test.pypi.org/simple/
 
-      - run: poetry publish --repository repositories.test_pypi --username __token__ --password ${{ secrets.PYPI_TOKEN }}
+      - run: poetry publish --repository test_pypi --username __token__ --password ${{ secrets.PYPI_TOKEN }}
