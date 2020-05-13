@@ -18,4 +18,7 @@ jobs:
       - run: make bootstrap
       - run: poetry update -vvv
       - run: poetry build -vvv
-      - run: poetry publish --username __token__ --password ${{ secrets.PYPI_TOKEN }}
+      # Add repository
+      - run: poetry config repositories.test_pypi https://test.pypi.org/simple/
+
+      - run: poetry publish --repository repositories.test_pypi --username __token__ --password ${{ secrets.PYPI_TOKEN }}
