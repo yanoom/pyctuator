@@ -1,16 +1,12 @@
 [tool.poetry]
 name = "pyctuator"
-version = "0.9"
+version = "0.89.4"
 description = "A Python implementation of the Spring Actuator API for popular web frameworks"
 authors = [
-    "Michael Yakobi <michael.yakobi@solaredge.com>",
-    "Inbal Levi <inbal.levi@solaredge.com>",
     "Yanay Reingewertz <yanay.reingewertz@solaredge.com>",
-    "Matan Rubin <matan.rubin@solaredge.com>"
 ]
 maintainers = [
-    "Matan Rubin <matan.rubin@solaredge.com>",
-    "Michael Yakobi <michael.yakobi@solaredge.com>"
+    "Yanay Reingewertz <yanay.reingewertz@solaredge.com>",
 ]
 readme = "README.md"
 homepage = "https://github.com/SolarEdgeTech/pyctuator"
