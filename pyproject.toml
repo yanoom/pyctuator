@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyctuator"
-version = "0.89.4"
+version = "0.92"
 description = "A Python implementation of the Spring Actuator API for popular web frameworks"
 authors = [
     "Yanay Reingewertz <yanay.reingewertz@solaredge.com>",

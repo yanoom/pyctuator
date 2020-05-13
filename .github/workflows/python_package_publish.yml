@@ -18,7 +18,14 @@ jobs:
       - run: make bootstrap
       - run: poetry update -vvv
       - run: poetry build -vvv
+
+#      - name: Publish package to TestPyPI
+#        uses: pypa/gh-action-pypi-publish@master
+#        with:
+#          user: __token__
+#          password: ${{ secrets.PYPI_TOKEN }}
+#          repository_url: https://test.pypi.org/simple/
+
       # Add repository
       - run: poetry config repositories.test_pypi https://test.pypi.org/simple/
-
       - run: poetry publish --repository test_pypi --username __token__ --password ${{ secrets.PYPI_TOKEN }}
