@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pyctuator"
+name = "pyctuator_yanoom"
 version = "0.92"
 description = "A Python implementation of the Spring Actuator API for popular web frameworks"
 authors = [
