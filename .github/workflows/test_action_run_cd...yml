@@ -19,10 +19,12 @@ jobs:
       - run: cd environment
         continue-on-error: true
       - run: pwd
-      - run: echo "Newfile baby!!" > newfile.txt
+      - run: echo "Newfile baby!!" > tests/newfile.txt
       - run: ls -la
       - run: cd tests; ls -la
         continue-on-error: true
+      - run: cat newfile.txt
+        working-directory: ./tests
       - run: pwd
       - run: ls -la
 
