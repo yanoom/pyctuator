@@ -17,9 +17,11 @@ jobs:
       - run: pwd
       - run: ls -la
       - run: cd environment
+        continue-on-error: true
       - run: pwd
       - run: ls -la
       - run: cd tests; ls -la
+        continue-on-error: true
       - run: pwd
       - run: ls -la
 
